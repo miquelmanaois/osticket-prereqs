@@ -6,8 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
 
 <h2>Environments and Technologies Used</h2>
 
@@ -21,34 +19,135 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
+- Microsoft Azure
+- Virtual Machine
+- osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 - Item 4
 - Item 5
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3>Step 1: Connect to your Virtual Machine with Remote Desktop</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- If you need help connecting to your virtual machine, please see my tutorial [here](https://github.com/miquelmanaois/virtualmachine)
+
+<h3>Step 2: Install / Enable IIS in Windows</h3>
+
+- At the bottom left, search control panel.
+- Select uninstall a program underneath programs.
+- On the left side, select Turn Windows features on or off
+- Select Internet Information Services, and select OK.
+
+
+<p align="center">
+<img src="https://i.imgur.com/Cxy8NM7.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/f1eRIx4.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+<h3>Step 3:  Download, install, and open Web Platform Installer. Afterwards, download necessary files
+</h3>
+
+- Once Web Platform Installer is open, go to the top right and search MySQL 5.5. 
+- Go to MySQL Windows 5.5 and click add. 
+- Go again to the top right and search for php.
+- Add All simple versions of x86 PHP up until 7.3
+- Select install at the bottom and it will tell you to create a username and password      to finish installation
+  - Username: root
+  - Password: Password1
+- You might get a message saying some products have failed to install.
+- Download and install the following from within the lab files: link
+  - PHP Version 7.3.8
+  - PHP Manager 1.5.0 for IIS 10
+  - Microsoft Visual C++ 2009 Redistributable Package
+
+
+<p align="center">
+<img src="https://i.imgur.com/Ed9wc2j.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/7ryNBQg.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
-<br />
+
+
+<h3>Step 4: Install osTicket v1.15.8</h3>
+     
+- Download osTicket (download from within lab files: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6))
+- Right click on the file and select extract all
+- Copy the “upload” folder INTO c:\inetpub\wwwroot
+- Rename “upload” to “osTicket”
+
+
+<p align="center">
+<img src="https://i.imgur.com/QhE5p74.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/I5yvFc4.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>
+ 
+     
+
+<h3>Step 5: Reload IIS (Open IIS, Stop and Start the server)
+</h3>
+
+- Search for Internet Information Services (IIS) and select open
+- On the left, select Sites -> Default Website -> osTicket
+- On the right, click “Browse *:80”
+- Before continuing, head back to and open IIS.
+
+
+<p align="center">
+<img src="https://i.imgur.com/nOv1FP1.png" height="80%" width="80%" alt="Azure Free Account"/>
+
+<h3>Step 5:  Enable Extensions in IIS: Note that some extensions are not enabled
+</h3>
+
+- Go back to IIS, Sites -> Default Web Site -> osTicket
+- Double-click PHP Manager
+- Click “Enable or disable an extension” at the bottom under “PHP Extensions”
+- Right click and enable the following
+    - php_imap.dll
+    - php_intl.dll
+    - Php_opcache.dll
+
+ 
+     
+ <p align="center">
+<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>
+
+<h3>Step 5:   Refresh the osTicket site in your browser, observe the changes
+</h3>
+
+- Intl Extension should now have a green check mark next to it
+
+
+<p align="center">
+<img src="https://i.imgur.com/okabWbT.png" height="60%" width="60%" alt="Azure Free Account"/>
+
+
+
+<h3>Step 6: Rename</h3>
+ 
+- Open Windows Explorer and select C: >> inetpub>> wwwroot>> osTicket>>Include and rename.
+	- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+	- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+
+<p align="center">
+<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+
+<h3>Step 6: Assign Permissions: ost-config.php</h3>
+
+- Right click ost-config.php, 
+- Open Properties -> Security -> Advanced -> Permissions 
+- Select Disable inheritance -> Remove all inherited permissions from this object 
+- Afterwards, Select add ->New Permissions -> Everyone -> All
+
+<p align="center">
+<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+  
+<h3>Step 6: Continue Setting up osTicket in the browser</h3>
+
+- Go back to browser and click continue
+  - Name Helpdesk
+  - Default email (receives email from customers)
+
+
+
+
+
