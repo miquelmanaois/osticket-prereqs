@@ -123,7 +123,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>Step 6: Rename</h3>
  
-- Open Windows Explorer and select C: >> inetpub>> wwwroot>> osTicket>>Include and rename.
+- Open Windows Explorer and select C:-> inetpub-> wwwroot-> osTicket-> Include and rename.
 	- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 	- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
@@ -144,8 +144,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h3>Step 7: Continue Setting up osTicket in the browser</h3>
 
 - Go back to browser and click continue
-  - Name Helpdesk
-  - Default email (receives email from customers)
+  - Name: Helpdesk
+  - Email: whichever email you want
   
 <p align="center">
 <img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
@@ -159,18 +159,41 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - On the left side, right click “Unamed” -> “Create New” -> “Database
 - Name it “osTicket”
 
-<h3>Step 7:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
+ <p align="center">
+<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>
+
+<h3>Step 8:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
 
 - First Name: your first name
 - Last Name: your last name
 - Email Address: whichever email you want (needs to be different from the Default Email)
 - Username: user_admin 
-- Password: Password1 (add "user_admin" credentials to your "passwords" text file for later)
+- Password: Password1 
 - MySQL Database: osTicket (the one you just created in HeidiSQL)
 - MySQL Username: root
 - MySQL Password: Password1
+- Finally, click Install Now
 
+ <p align="center">
+<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>
 
+🎉Congratulations! You have sucessfully installed osTicket!🎉
+
+<h3>Step 9: Cleanup.</h3>
+
+- Go to C: -> inetpub->wwwroot->osTicket->setup
+    - Delete the contents in the setup folder
+    - Afterwards, delete the setup folder
+- Go to C:-->Inetpub-->wwwroot-->osTicket-->include
+    - Right click on ost-config.php 
+    - Select securities -> Advanced -> edit to change permissions
+	- Allow everyone to only have read and execute
+	
+ <p align="center">
+<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>	
 
 
 
