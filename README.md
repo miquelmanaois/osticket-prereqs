@@ -93,7 +93,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/nOv1FP1.png" height="80%" width="80%" alt="Azure Free Account"/>
 
-<h3>Step 5:  Enable Extensions in IIS: Note that some extensions are not enabled
+<h3>Step 6:  Enable Extensions in IIS: Note that some extensions are not enabled
 </h3>
 
 - Go back to IIS, Sites -> Default Web Site -> osTicket
@@ -110,7 +110,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
 
-<h3>Step 5:   Refresh the osTicket site in your browser, observe the changes
+<h3>Step 7:   Refresh the osTicket site in your browser, observe the changes
 </h3>
 
 - Intl Extension should now have a green check mark next to it
@@ -121,7 +121,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 
-<h3>Step 6: Rename</h3>
+<h3>Step 8: Rename</h3>
  
 - Open Windows Explorer and select C:-> inetpub-> wwwroot-> osTicket-> Include and rename.
 	- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
@@ -131,7 +131,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
 
-<h3>Step 6: Assign Permissions: ost-config.php</h3>
+<h3>Step 9: Assign Permissions: ost-config.php</h3>
 
 - Right click ost-config.php, 
 - Open Properties -> Security -> Advanced -> Permissions 
@@ -141,7 +141,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
   
-<h3>Step 7: Continue Setting up osTicket in the browser</h3>
+<h3>Step 10: Continue Setting up osTicket in the browser</h3>
 
 - Go back to browser and click continue
   - Name: Helpdesk
@@ -150,7 +150,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
 
-<h3>Step 7: Download and Install HeidiSQL</h3>
+<h3>Step 11: Download and Install HeidiSQL</h3>
 
 - Open HeidiSQL and create new session
    - User: root
@@ -163,7 +163,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
 
-<h3>Step 8:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
+<h3>Step 12:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
 
 - First Name: your first name
 - Last Name: your last name
@@ -181,7 +181,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 🎉Congratulations! You have sucessfully installed osTicket!🎉
 
-<h3>Step 9: Cleanup.</h3>
+<h3>Step 13: Cleanup.</h3>
 
 - Go to C: -> inetpub->wwwroot->osTicket->setup
     - Delete the contents in the setup folder
