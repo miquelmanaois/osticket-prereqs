@@ -141,11 +141,34 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p align="center">
 <img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
   
-<h3>Step 6: Continue Setting up osTicket in the browser</h3>
+<h3>Step 7: Continue Setting up osTicket in the browser</h3>
 
 - Go back to browser and click continue
   - Name Helpdesk
   - Default email (receives email from customers)
+  
+<p align="center">
+<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+
+<h3>Step 7: Download and Install HeidiSQL</h3>
+
+- Open HeidiSQL and create new session
+   - User: root
+   - Password : Password1
+- Select Open
+- On the left side, right click “Unamed” -> “Create New” -> “Database
+- Name it “osTicket”
+
+<h3>Step 7:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
+
+- First Name: your first name
+- Last Name: your last name
+- Email Address: whichever email you want (needs to be different from the Default Email)
+- Username: user_admin 
+- Password: Password1 (add "user_admin" credentials to your "passwords" text file for later)
+- MySQL Database: osTicket (the one you just created in HeidiSQL)
+- MySQL Username: root
+- MySQL Password: Password1
 
 
 
