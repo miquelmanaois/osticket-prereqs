@@ -32,7 +32,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - If you need help connecting to your virtual machine, please see my tutorial [here](https://github.com/miquelmanaois/virtualmachine)
 
-<h3>Step 2: Install / Enable IIS in Windows</h3>
+<h3>Step 2: Install / Enable Internet Information Services (IIS) in Windows</h3>
 
 - At the bottom left, search control panel.
 - Select uninstall a program underneath programs.
@@ -224,5 +224,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>	
 
+
+Click [here](https://github.com/miquelmanaois/osTicket-post-installing) to move on to part 2 of this tutorial!
 
 
