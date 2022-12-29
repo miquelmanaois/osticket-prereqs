@@ -41,29 +41,47 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <p align="center">
-<img src="https://i.imgur.com/Cxy8NM7.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/f1eRIx4.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/NbQvYeL.png.png" height="80%" width="80%" alt="Azure Free Account"/> 
 </p>
 
 
 <h3>Step 3:  Download, install, and open Web Platform Installer. Afterwards, download necessary files
 </h3>
 
+- osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+	- Download Web Platform Installer -> Select download anyway -> at the top right select Open file ->
+		- You will then follow a prompt to install Web Platform Installer
+			- Open Web Platform Installer
+
+<p align="center">
+<img src="https://i.imgur.com/0On2vKd.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/V4p94mP.png" height="80%" width="80%" alt="Azure Free Services"/>
+</p>
+
 - Once Web Platform Installer is open, go to the top right and search MySQL 5.5. 
 - Go to MySQL Windows 5.5 and click add. 
-- Go again to the top right and search for php.
+- Go to the top right again and search for php.
+	- Sort by "name"
 - Add All simple versions of x86 PHP up until 7.3
 - Select install at the bottom and it will tell you to create a username and password      to finish installation
+
+<p align="center">
+<img src="https://i.imgur.com/uWAVcRG.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/MQmZfht.png" height="80%" width="80%" alt="Azure Free Services"/>
+</p>
+
+
   - Username: root
   - Password: Password1
-- You might get a message saying some products have failed to install.
-- Download and install the following from within the lab files: link
+- Follow the prompt to finish installation
+- You might get a message saying some products have failed to install
+	- Select finish
+- Download and install the following from within the lab files: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
   - PHP Version 7.3.8
   - PHP Manager 1.5.0 for IIS 10
   - Microsoft Visual C++ 2009 Redistributable Package
 
 
 <p align="center">
-<img src="https://i.imgur.com/Ed9wc2j.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/7ryNBQg.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/zAPFRmU.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/DUiyQdt.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
 
 
@@ -71,12 +89,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      
 - Download osTicket (download from within lab files: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6))
 - Right click on the file and select extract all
-- Copy the “upload” folder INTO c:\inetpub\wwwroot
-- Rename “upload” to “osTicket”
+	- Open the new osTicket folder
+		- Copy the “upload” folder INTO c:\inetpub\wwwroot
+		- Rename “upload” to “osTicket”
 
 
 <p align="center">
-<img src="https://i.imgur.com/QhE5p74.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/I5yvFc4.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/BpL8IJE.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/xSJD7yk.png" height="80%" width="80%" alt="Azure Free Services"/>
 </p>
  
      
