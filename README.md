@@ -175,40 +175,51 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Go back to browser and click continue
   - Name: Helpdesk
   - Email: whichever email you want
+  - First Name: your first name
+  - Last Name: your last name
+  - Email Address: whichever email you want (needs to be different from the Default Email)
+  - Username: user_admin 
+  - Password: Password1 
   
 <p align="center">
-<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+<img src="https://i.imgur.com/1GfpPLs.png" height="80%" width="80%" alt="Azure Free Account"/>
 
 <h3>Step 11: Download and Install HeidiSQL</h3>
 
-- Open HeidiSQL and create new session
+- Head to osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+	- Download and install HeidiSQL
+- Open HeidiSQL -> Select new at the bottom left corner 
    - User: root
-   - Password : Password1
+   - Password : Password
 - Select Open
 - On the left side, right click “Unamed” -> “Create New” -> “Database
-- Name it “osTicket”
+- Name it “osTicket” and select OK
 
  <p align="center">
-<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/mDBWQ5k.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/ADJYQyB.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>
 
 <h3>Step 12:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
 
-- First Name: your first name
-- Last Name: your last name
-- Email Address: whichever email you want (needs to be different from the Default Email)
-- Username: user_admin 
-- Password: Password1 
+
 - MySQL Database: osTicket (the one you just created in HeidiSQL)
 - MySQL Username: root
 - MySQL Password: Password1
 - Finally, click Install Now
 
- <p align="center">
-<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<p align="center">
+<img src="https://i.imgur.com/Npqj9Us.png" height="80%" width="80%" alt="Azure Free Account"/>
+
 
 🎉Congratulations! You have sucessfully installed osTicket!🎉
+
+<p align="center">
+<img src="https://i.imgur.com/F52ypHn.png" height="80%" width="80%" alt="Azure Free Account"/>
+
+<h3>Tips!</h3>
+
+- To create tickets as a user: http://localhost/osTicket/
+- To log in as an Admin or help desk professional: http://localhost/osTicket/scp
 
 <h3>Step 13: Cleanup.</h3>
 
@@ -217,11 +228,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     - Afterwards, delete the setup folder
 - Go to C:-->Inetpub-->wwwroot-->osTicket-->include
     - Right click on ost-config.php 
-    - Select securities -> Advanced -> edit to change permissions
-	- Allow everyone to only have read and execute
+    - Select securities -> Advanced -> Click on everyone -> edit to change permissions
+	- Allow everyone to only have read and execute, then select OK -> Apply -> OK
 	
  <p align="center">
-<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/wucT3UN.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/cPSx6VL.png" height="70%" width="70%" alt="Azure Free Services"/>
 </p>	
 
 
