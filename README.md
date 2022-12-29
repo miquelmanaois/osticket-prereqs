@@ -151,17 +151,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <p align="center">
-<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+<img src="https://i.imgur.com/DDTR8CD.png" height="80%" width="80%" alt="Azure Free Account"/>
 
 <h3>Step 9: Assign Permissions: ost-config.php</h3>
 
 - Right click ost-config.php, 
 - Open Properties -> Security -> Advanced -> Permissions 
 - Select Disable inheritance -> Remove all inherited permissions from this object 
-- Afterwards, Select add ->New Permissions -> Everyone -> All
 
 <p align="center">
-<img src="https://i.imgur.com/rEBpL8Y.png" height="80%" width="80%" alt="Azure Free Account"/>
+<img src="https://i.imgur.com/pcFvK9d.png" height="80%" width="80%" alt="Azure Free Account"/>
+
+- Afterwards, Select add -> Select a principal  -> type in "everyone" -> check names-> Select OK
+	- Allow everyone full control (check all boxes) -> Select apply -> OK
+
+<p align="center">
+<img src="https://i.imgur.com/vUlpzTb.png" height="70%" width=70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/WZrk1F7.png" height="80%" width="80%" alt="Azure Free Services"/>
+</p>
+
   
 <h3>Step 10: Continue Setting up osTicket in the browser</h3>
 
