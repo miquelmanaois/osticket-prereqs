@@ -104,13 +104,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </h3>
 
 - Search for Internet Information Services (IIS) and select open
-- On the left, select Sites -> Default Website -> osTicket
+	- Select restart on right hand side 
+- On the left, select Virtualmachine -> Sites -> Default Website -> osTicket
 - On the right, click “Browse *:80”
+	- This should open osTicket in your web browser
 - Before continuing, head back to and open IIS.
 
 
 <p align="center">
-<img src="https://i.imgur.com/nOv1FP1.png" height="80%" width="80%" alt="Azure Free Account"/>
+<img src="https://i.imgur.com/OpBkwwj.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/XNVSNia.png" height="80%" width="80%" alt="Azure Free Services"/>
+</p>
 
 <h3>Step 6:  Enable Extensions in IIS: Note that some extensions are not enabled
 </h3>
@@ -119,14 +122,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Double-click PHP Manager
 - Click “Enable or disable an extension” at the bottom under “PHP Extensions”
 - Right click and enable the following
-    - php_imap.dll
+    - php_imap.dll (Might be already enabled)
     - php_intl.dll
     - Php_opcache.dll
 
  
      
  <p align="center">
-<img src="https://i.imgur.com/14pPOdv.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/okabWbT.png" height="70%" width="70%" alt="Azure Free Services"/>
+<img src="https://i.imgur.com/GQfPOU8.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/iCK6vst.png" height="80%" width="80%" alt="Azure Free Services"/>
 </p>
 
 <h3>Step 7:   Refresh the osTicket site in your browser, observe the changes
@@ -136,7 +139,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <p align="center">
-<img src="https://i.imgur.com/okabWbT.png" height="60%" width="60%" alt="Azure Free Account"/>
+<img src="https://i.imgur.com/ByfN2Fd.png" height="80%" width="80%" alt="Azure Free Account"/>
 
 
 
